@@ -4,6 +4,16 @@ import java.util.Date;
 
 import com.w3cjava.common.utils.IdGen;
 
+/**
+ * 
+ * @class  DataEntity
+ * @version 1.0.0
+ * @author cos
+ * @date   2019年6月25日
+ * @desc   数据Entity类
+ *
+ * @param <T>
+ */
 public abstract class DataEntity<T> extends BaseEntity<T> {
 	private static final long serialVersionUID = 1L;
 	protected String remarks;	// 备注

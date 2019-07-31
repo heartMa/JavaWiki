@@ -9,6 +9,15 @@ import com.w3cjava.modules.test.entity.Test;
 import com.w3cjava.modules.test.service.TestService;
 @Controller
 @RequestMapping(value="test")
+/**
+ * 
+ * @class  TestController
+ * @version 1.0.0
+ * @author cos
+ * @date   2019年7月31日
+ * @desc   测试增删改查基础功能Controller
+ *
+ */
 public class TestController extends BaseController{
 	@Autowired
 	private TestService testService;

@@ -13,7 +13,15 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
-
+/**
+ * 
+ * @class  LogAspect
+ * @version 1.0.0
+ * @author cos
+ * @date   2019年7月31日
+ * @desc   日志切面类
+ *
+ */
 @Aspect
 @Component
 public class LogAspect {
