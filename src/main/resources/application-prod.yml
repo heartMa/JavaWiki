@@ -1,0 +1,37 @@
+spring: 
+   mvc: 
+       favicon:
+         enabled: false
+   datasource:
+       type: com.alibaba.druid.pool.DruidDataSource
+       driverClassName: com.mysql.jdbc.Driver
+       url: jdbc:mysql://127.0.0.1:3306/blog?useUnicode=true&characterEncoding=utf8
+       username: root
+       password: Mysql2018!@#$
+       initialSize: 1
+       minIdle: 3
+       maxActive: 20
+       # 配置获取连接等待超时的时间
+       maxWait: 60000
+       # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+       timeBetweenEvictionRunsMillis: 60000
+       # 配置一个连接在池中最小生存的时间，单位是毫秒
+       minEvictableIdleTimeMillis: 30000
+       validationQuery: select 'x'
+       testWhileIdle: true
+       testOnBorrow: false
+       testOnReturn: false
+
+server:
+  port: 8000
+#  ssl:
+#    key-store: classpath:ssl/1534728933823.pfx
+#    key-store-password: 1534728933823
+#    key-store-type: PKCS12
+logging:
+  file: /opt/blog/log/JavaWiki.log
+#blog:   #自定义属性
+#  filePath: /opt/blog/files/
+#  database: blog
+#  mysqlExec: /usr/bin/mysqldump -uroot -pMysql2018!@#$ blog
+#  backupPath: /opt/blog/backup/
